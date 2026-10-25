@@ -1,0 +1,12 @@
+かんきつカメラ v3.4
+
+index.html と sw.js をGitHubの同じ場所へ上書きし、Pages公開完了後にSafariで
+https://testmikan2024-cmd.github.io/citrus-camera/index.html?update=34
+を開いてください。画面上部のv3.4を確認してください。
+
+Safariの「Error preparing Blob/File data to be stored in object store」を回避するため、新しい写真はBlobではなくArrayBufferとしてIndexedDBに保存します。JPEGの内容や画質は変えません。既存のBlob形式の画像も読み込めます。DB名・バージョン・ストアは維持します。サイトデータを削除する必要はありません。
+
+確認：2枚撮影→再読み込みして枚数・画像一覧を確認→ZIP書き出し→「ファイル」で解凍しJPEGとimages.csvを確認。保存確認前は画像を削除しないでください。
+
+この修正版より古い画面では新形式の写真を読めません。複数の撮影タブを開いている場合は、すべてv3.4へ更新して使ってください。ホーム画面から使っている場合も表示バージョンを確認してください。
+iPhone実機での検証は未実施です。再発したらエラー全文を送ってください。
