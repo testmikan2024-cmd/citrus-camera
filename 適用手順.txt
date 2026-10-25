@@ -1,0 +1,3 @@
+index.html と sw.js をGitHubへ上書きし、Pages公開完了後、Safariで https://testmikan2024-cmd.github.io/citrus-camera/index.html?update=33 を開いてください。上部のv3.3を確認してください。
+撮影時の空のエラー情報による二次エラーを修正しました。保存要求自体のエラーを取得し、失敗した段階と理由を表示します。保存失敗そのものの理由はまだ未確定です。再発した場合はエラー全文を送ってください。
+既存のIndexedDBと画像は維持します。サイトデータは削除しないでください。iPhone実機は未検証です。
